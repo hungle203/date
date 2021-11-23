@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function Student(id, name, address) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.address = address;
+    //     this.getInfor = function () {
+    //         return "Id=" + "name=" + this.name +"Address" +this.address
+    //     }
+    // }
+    // let student = new Student(1, "Nguyễn văn A", "Hà Nội");
+    // document.write(student.getInfor())
+    // let student = {
+    //     id: 1,
+    //     name: "Nguyễn Văn A",
+    //     address: "Hà Nội",
+    //     getInfor: function () {
+    //         return "Id=" + this.id+ "Name"+ this.name+ "Address" + this.address;
+    //     }
+    // }
+    // document.write(student.name)
+    // document.write(student.getInfor())
+    let person = {
+        name: ["Bob ","Smith "],
+        age: 32,
+        gender: "male",
+        interests: ["music ","skiing "],
+        bio: function () {
+            alert(this.name[0] + '' + this.name[1] + 'is ' + this.age  + 'year old. He like ' + this.interests[0]  + 'and ' + this.interests[1] + '.' );
+        },
+        greeting: function () {
+            alert("Hi! I\"m" + this.name[0] + this.name[0] + '.');
+        }
+    }
+    person.bio();
+</script>
+</body>
+</html>
